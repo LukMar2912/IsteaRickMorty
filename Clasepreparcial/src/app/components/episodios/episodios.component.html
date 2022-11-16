@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Fecha de emision</th>
+        <th scope="col">Episodio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let epi of listaEpisodios; index as i">
+        <td>{{epi.name}}</td>
+        <td>{{epi.air_date}}</td>
+        <td>{{epi.episode}}</td>
+      </tr>
+    </tbody>
+</table>
